@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kim Hwisu Portfolio | 기업여신 · 부동산 금융 · 자산분석</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', 'Noto Sans KR', sans-serif;
+      background-color: #f8fafc;
+      color: #0f172a;
+    }
+    .glass-nav {
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid #e2e8f0;
+    }
+    .card-hover {
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .card-hover:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 32px -8px rgba(15, 23, 42, 0.08);
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-emerald-100 selection:text-emerald-900">
+
+  <!-- Navigation -->
+  <header class="fixed top-0 inset-x-0 z-50 glass-nav">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#hero" class="font-extrabold text-lg tracking-tight text-slate-900 flex items-center gap-2">
+        <span class="w-2.5 h-2.5 rounded-full bg-emerald-600"></span>
+        Kim Hwisu
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+        <a href="#hero" class="hover:text-emerald-700 transition">Home</a>
+        <a href="#about" class="hover:text-emerald-700 transition">About</a>
+        <a href="#projects" class="hover:text-emerald-700 transition">Projects</a>
+        <a href="#contact" class="hover:text-emerald-700 transition">Contact</a>
+      </nav>
+      <a href="#contact" class="inline-flex items-center gap-1.5 text-xs font-semibold px-3.5 py-2 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 hover:bg-emerald-100 transition">
+        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+        Available for Opportunities
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="pt-28 pb-20 md:pt-36 md:pb-28 bg-gradient-to-b from-white via-slate-50 to-slate-100/70 border-b border-slate-200/80">
+    <div class="max-w-6xl mx-auto px-6 grid lg:grid-cols-12 gap-12 items-center">
+      <div class="lg:col-span-7 space-y-6">
+        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-50 border border-blue-200/80 text-blue-800 text-xs font-semibold">
+          <span>Corporate Credit · Real Estate Finance · Public Research</span>
+        </div>
+        <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 leading-[1.18]">
+          Kim Hwisu Portfolio.<br />
+          <span class="text-emerald-700">재무 데이터와 실물 가치평가로</span><br />
+          기업과 자산의 신용도를 증명합니다.
+        </h1>
+        <p class="text-base md:text-lg text-slate-600 leading-relaxed max-w-2xl">
+          투자자산운용사와 공인중개사 자격을 기반으로 기업의 현금흐름과 상업용 부동산의 수익 구조를 함께 분석합니다. 지자체 행정 실무와 학회 프로젝트 경험을 바탕으로 즉시 현업에 기여하는 실무형 인재입니다.
+        </p>
+        <div class="flex flex-wrap items-center gap-3 pt-2">
+          <a href="#projects" class="px-6 py-3 rounded-xl bg-slate-900 text-white text-sm font-semibold hover:bg-emerald-700 transition shadow-sm">
+            프로젝트 보기
+          </a>
+          <a href="#about" class="px-6 py-3 rounded-xl bg-white text-slate-800 border border-slate-300 text-sm font-semibold hover:bg-slate-50 transition">
+            이력 및 역량 확인
+          </a>
+        </div>
+        <div class="flex flex-wrap gap-2 pt-2">
+          <span class="px-3 py-1 rounded-md bg-slate-200/70 text-slate-700 text-xs font-semibold">#Corporate_Credit</span>
+          <span class="px-3 py-1 rounded-md bg-slate-200/70 text-slate-700 text-xs font-semibold">#Real_Estate_IM</span>
+          <span class="px-3 py-1 rounded-md bg-slate-200/70 text-slate-700 text-xs font-semibold">#NPL_Valuation</span>
+          <span class="px-3 py-1 rounded-md bg-slate-200/70 text-slate-700 text-xs font-semibold">#CashFlow_Modeling</span>
+        </div>
+      </div>
+
+      <!-- Profile Summary Card -->
+      <div class="lg:col-span-5">
+        <div class="bg-white rounded-2xl border border-slate-200 shadow-lg p-7 space-y-6">
+          <div class="flex items-center gap-4">
+            <img src="profile.jpg" onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2280%22 height=%2280%22 viewBox=%220 0 80 80%22><rect width=%2280%22 height=%2280%22 rx=%2216%22 fill=%22%230f766e%22/><text x=%2250%25%22 y=%2254%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22sans-serif%22 font-size=%2224%22 font-weight=%22bold%22>KH</text></svg>';" alt="김휘수 프로필" class="w-20 h-20 rounded-2xl object-cover border border-slate-200 bg-emerald-700 shrink-0" />
+            <div>
+              <span class="text-xs font-bold uppercase tracking-wider text-emerald-700">Dankook Univ.</span>
+              <h2 class="text-2xl font-bold text-slate-900">김휘수</h2>
+              <p class="text-sm text-slate-600 mt-0.5">단국대학교 죽전캠퍼스<br />도시계획·부동산학부 부동산학전공</p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 gap-3 pt-2 border-t border-slate-100">
+            <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/60">
+              <div class="text-xs text-slate-500">금융·부동산 자격</div>
+              <div class="text-sm font-bold text-slate-900 mt-0.5">투운사 · 공인중개사</div>
+            </div>
+            <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/60">
+              <div class="text-xs text-slate-500">준비 중인 자격</div>
+              <div class="text-sm font-bold text-blue-800 mt-0.5">신용분석사 · ADsP</div>
+            </div>
+          </div>
+
+          <div class="space-y-2.5 pt-1">
+            <div class="text-xs font-bold uppercase tracking-wider text-slate-400">Core Focus</div>
+            <ul class="space-y-2 text-sm text-slate-700">
+              <li class="flex items-start gap-2">
+                <span class="text-emerald-600 font-bold">✓</span>
+                <span>중소기업·소상공인 여신 및 재무·신용 리스크 분석</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-emerald-600 font-bold">✓</span>
+                <span>상업용 부동산 IM 현금흐름(NOI·Cap Rate) 민감도 모델링</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-emerald-600 font-bold">✓</span>
+                <span>경매 권리분석 및 부실채권(NPL) 담보가치 평가</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About & Journey Section -->
+  <section id="about" class="py-20 md:py-28 max-w-6xl mx-auto px-6 space-y-20">
+    <div class="max-w-2xl">
+      <span class="text-xs font-bold tracking-widest uppercase text-emerald-700">ABOUT</span>
+      <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mt-2">Journey & Expertise</h2>
+      <p class="text-slate-600 mt-3">금융 분석과 부동산 실물 평가, 공공 행정 경험을 연결해 온 과정과 핵심 역량입니다.</p>
+    </div>
+
+    <!-- Timeline -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="bg-white p-6 rounded-2xl border border-slate-200 card-hover">
+        <span class="text-xs font-bold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-md">2022.03 ~ 현재</span>
+        <h3 class="text-lg font-bold text-slate-900 mt-3">단국대학교 죽전캠퍼스</h3>
+        <p class="text-sm text-slate-600 mt-1">도시계획·부동산학부 부동산학전공 재학 및 교내 지역조사 학술 우수상 수상</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl border border-slate-200 card-hover">
+        <span class="text-xs font-bold text-blue-700 bg-blue-50 px-2.5 py-1 rounded-md">군 복무 · 자격</span>
+        <h3 class="text-lg font-bold text-slate-900 mt-3">해병대 공수부대 만기전역</h3>
+        <p class="text-sm text-slate-600 mt-1">강한 책임감과 조직 적응력 체득 · 대한구조협회 수상인명구조 자격 취득</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl border border-slate-200 card-hover">
+        <span class="text-xs font-bold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-md">2025.12</span>
+        <h3 class="text-lg font-bold text-slate-900 mt-3">용인시청 대학생 행정체험연수</h3>
+        <p class="text-sm text-slate-600 mt-1">지자체 행정 문서 관리 및 민원·행정 프로세스 실무 지원 수료</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl border border-slate-200 card-hover">
+        <span class="text-xs font-bold text-blue-700 bg-blue-50 px-2.5 py-1 rounded-md">2026.07</span>
+        <h3 class="text-lg font-bold text-slate-900 mt-3">투자자산운용사 자격 취득</h3>
+        <p class="text-sm text-slate-600 mt-1">한국금융투자협회 주관 자본시장·자산운용·리스크 관리 전문 자격 확보</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl border border-slate-200 card-hover">
+        <span class="text-xs font-bold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-md">2026 상·하반기</span>
+        <h3 class="text-lg font-bold text-slate-900 mt-3">부동산 학회 유리드(URID) 조장</h3>
+        <p class="text-sm text-slate-600 mt-1">위례신도시 상권분석 우수상 수상 및 여의도 오투타워 실물 IM 현금흐름 모델링 주도</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl border border-slate-200 card-hover">
+        <span class="text-xs font-bold text-blue-700 bg-blue-50 px-2.5 py-1 rounded-md">2026.12 ~ 2027</span>
+        <h3 class="text-lg font-bold text-slate-900 mt-3">제37회 공인중개사 합격 · 신분사 준비</h3>
+        <p class="text-sm text-slate-600 mt-1">공인중개사 자격 확보 및 기업여신 역량 고도화를 위한 신용분석사 취득 진행</p>
+      </div>
+    </div>
+
+    <!-- Core Competencies -->
+    <div class="bg-white rounded-3xl border border-slate-200 p-8 md:p-10 space-y-8">
+      <h3 class="text-xl font-bold text-slate-900">Core Competencies</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="space-y-3">
+          <div class="flex justify-between items-center">
+            <h4 class="font-bold text-slate-900">Financial & Credit Modeling</h4>
+            <span class="text-xs font-bold text-emerald-700">85%</span>
+          </div>
+          <div class="w-full h-2 bg-slate-100 rounded-full overflow-hidden">
+            <div class="h-full bg-emerald-600 rounded-full" style="width: 85%"></div>
+          </div>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            재무제표 분석과 NOI, Cap Rate, 민감도 분석(Sensitivity Analysis)을 통해 기업과 부동산 자산의 현금흐름 안정성을 숫자로 검증합니다.
+          </p>
+        </div>
+
+        <div class="space-y-3">
+          <div class="flex justify-between items-center">
+            <h4 class="font-bold text-slate-900">Real Estate & Auction Analysis</h4>
+            <span class="text-xs font-bold text-blue-700">90%</span>
+          </div>
+          <div class="w-full h-2 bg-slate-100 rounded-full overflow-hidden">
+            <div class="h-full bg-blue-700 rounded-full" style="width: 90%"></div>
+          </div>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            등기부 권리분석, 임대차 구조, 실거래가 및 배후 상권 데이터를 결합해 담보 가치의 적정성과 낙찰 안전마진을 도출합니다.
+          </p>
+        </div>
+
+        <div class="space-y-3">
+          <div class="flex justify-between items-center">
+            <h4 class="font-bold text-slate-900">Public Admin & Research</h4>
+            <span class="text-xs font-bold text-emerald-700">85%</span>
+          </div>
+          <div class="w-full h-2 bg-slate-100 rounded-full overflow-hidden">
+            <div class="h-full bg-emerald-600 rounded-full" style="width: 85%"></div>
+          </div>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            용인시청 행정체험 경험과 팀장으로서 다수의 임장·기업분석 보고서를 총괄한 경험을 바탕으로 체계적인 문서 작성과 협업을 수행합니다.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4 Values -->
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="bg-white p-7 rounded-2xl border border-slate-200 space-y-2.5">
+        <h4 class="font-bold text-slate-900 text-base">📌 금융과 부동산을 바라보는 관점</h4>
+        <p class="text-sm text-slate-600 leading-relaxed">
+          기업여신과 자산금융의 본질은 담보의 겉모습이 아니라 '지속 가능한 현금흐름'에 있다고 봅니다. 재무제표의 숫자와 현장의 임대·상권 데이터를 함께 읽을 때 비로소 정확한 리스크 판단이 가능합니다.
+        </p>
+      </div>
+      <div class="bg-white p-7 rounded-2xl border border-slate-200 space-y-2.5">
+        <h4 class="font-bold text-slate-900 text-base">✨ 전환점이 된 경험</h4>
+        <p class="text-sm text-slate-600 leading-relaxed">
+          여의도 오투타워 실물 IM 모델링과 하나F&I 기업분석을 병행하며, 부동산 자산의 수익 구조가 기업의 재무 건전성 및 부실채권(NPL) 회수 가치와 직결된다는 통찰을 얻었습니다.
+        </p>
+      </div>
+      <div class="bg-white p-7 rounded-2xl border border-slate-200 space-y-2.5">
+        <h4 class="font-bold text-slate-900 text-base">📊 강점과 실행력</h4>
+        <p class="text-sm text-slate-600 leading-relaxed">
+          복잡한 조건을 구조화해 끝까지 완수하는 실행력이 강점입니다. 투자자산운용사와 공인중개사를 연달아 취득하고, 학회 조장으로서 현장 조사부터 Excel 모델링까지 직접 주도했습니다.
+        </p>
+      </div>
+      <div class="bg-white p-7 rounded-2xl border border-slate-200 space-y-2.5">
+        <h4 class="font-bold text-slate-900 text-base">🎯 앞으로의 방향성</h4>
+        <p class="text-sm text-slate-600 leading-relaxed">
+          중소기업·소상공인 지원과 지역경제 활성화에 기여하는 기업여신(RM) 및 자산심사 전문가로 성장하여, 데이터 기반의 건전한 금융 의사결정을 이끄는 인재가 되겠습니다.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 md:py-28 bg-slate-100/80 border-y border-slate-200">
+    <div class="max-w-6xl mx-auto px-6 space-y-12">
+      <div class="max-w-2xl">
+        <span class="text-xs font-bold tracking-widest uppercase text-emerald-700">PROJECTS</span>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mt-2">Project Portfolio</h2>
+        <p class="text-slate-600 mt-3">주요 분석 및 협업 프로젝트를 목표(Objective), 접근(Approach), 결과(Result), 역할(Role) 순으로 정리했습니다.</p>
+      </div>
+
+      <div class="space-y-8">
+        <!-- Project 1 -->
+        <article class="bg-white rounded-3xl border border-slate-200 p-8 md:p-10 shadow-sm card-hover">
+          <div class="flex flex-wrap items-center gap-2 mb-3">
+            <span class="px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 text-xs font-bold">실물 IM · 재무모델링</span>
+            <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-600 text-xs font-semibold">Excel Cash Flow</span>
+          </div>
+          <h3 class="text-2xl font-bold text-slate-900">여의도 오투타워 실물 IM 현금흐름 & 민감도 분석</h3>
+          <div class="grid md:grid-cols-2 gap-6 mt-6 pt-6 border-t border-slate-100 text-sm">
+            <div class="space-y-4">
+              <div>
+                <h4 class="font-bold text-slate-900 mb-1">Objective</h4>
+                <p class="text-slate-600">여의도 핵심 권역 오피스 자산(오투타워)의 매입 및 운용 타당성을 검증하기 위한 다개년 현금흐름(CF) 및 수익률 민감도 분석</p>
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-900 mb-1">Approach</h4>
+                <ul class="list-disc list-inside text-slate-600 space-y-1">
+                  <li>임대료·관리비·공실률 가정을 반영한 연도별 순영업소득(NOI) 산출</li>
+                  <li>금리 및 Exit Cap Rate 변동에 따른 2차원 민감도(Sensitivity) 테이블 구축</li>
+                  <li>여의도 권역 프라임 오피스 임대차 시세 및 수급 동향 비교</li>
+                </ul>
+              </div>
+            </div>
+            <div class="space-y-4">
+              <div>
+                <h4 class="font-bold text-emerald-800 mb-1">Result</h4>
+                <ul class="list-disc list-inside text-slate-600 space-y-1">
+                  <li>금리 상승 및 공실 확대 시나리오별 하방 리스크(Downside) 방어 구간 도출</li>
+                  <li>임대차 구조 개선을 통한 배당수익률 및 매각차익 극대화 조건 제시</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-900 mb-1">Role</h4>
+                <ul class="list-disc list-inside text-slate-600 space-y-1">
+                  <li>유리드(URID) 팀 조장으로서 현금흐름 Excel 모델 설계 및 수치 검증 총괄</li>
+                  <li>IM 내 재무·수익성 파트 구조화 및 투자 판단 근거 도출</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="bg-white rounded-3xl border border-slate-200 p-8 md:p-10 shadow-sm card-hover">
+          <div class="flex flex-wrap items-center gap-2 mb-3">
+            <span class="px-3 py-1 rounded-full bg-blue-50 text-blue-700 border border-blue-200 text-xs font-bold">상업용 경매 · 권리분석</span>
+            <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-600 text-xs font-semibold">옥션원 · 수익성 평가</span>
+          </div>
+          <h3 class="text-2xl font-bold text-slate-900">마곡디엠프라자 1차 상업용 부동산 경매 권리·수익성 분석</h3>
+          <div class="grid md:grid-cols-2 gap-6 mt-6 pt-6 border-t border-slate-100 text-sm">
+            <div class="space-y-4">
+              <div>
+                <h4 class="font-bold text-slate-900 mb-1">Objective</h4>
+                <p class="text-slate-600">서울 강서구 마곡동 양천향교역 인근 구분상가 경매 물건의 인수 리스크를 제거하고 목표 수익률을 달성하는 적정 입찰가 산정</p>
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-900 mb-1">Approach</h4>
+                <ul class="list-disc list-inside text-slate-600 space-y-1">
+                  <li>옥션원 데이터를 활용한 등기부등본 말소기준권리 및 임차인 대항력·배당순위 분석</li>
+                  <li>마곡지구 배후 오피스·주거 수요 및 인근 상가 임대료·공실 현황 현장 조사</li>
+                  <li>유찰 회차별 최저입찰가 대비 대출 레버리지 활용 시 자기자본수익률(ROE) 산출</li>
+                </ul>
+              </div>
+            </div>
+            <div class="space-y-4">
+              <div>
+                <h4 class="font-bold text-blue-800 mb-1">Result</h4>
+                <ul class="list-disc list-inside text-slate-600 space-y-1">
+                  <li>낙찰자 추가 인수 보증금 및 미납 관리비 리스크를 반영한 보수적 안전마진 확보</li>
+                  <li>공실 리스크를 감안한 적정 응찰가 가이드라인 및 임대 활성화 전략 수립</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-900 mb-1">Role</h4>
+                <ul class="list-disc list-inside text-slate-600 space-y-1">
+                  <li>권리분석 구조화 및 입찰가별 수익률 시뮬레이션 작성</li>
+                  <li>실무형 투자 브리핑 자료 구성 및 발표 주도</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="bg-white rounded-3xl border border-slate-200 p-8 md:p-10 shadow-sm card-hover">
+          <div class="flex flex-wrap items-center gap-2 mb-3">
+            <span class="px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 text-xs font-bold">상권·입지 분석 · 우수상</span>
+            <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-600 text-xs font-semibold">현장 임장 · 데이터 분석</span>
+          </div>
+          <h3 class="text-2xl font-bold text-slate-900">위례신도시 상권 활성화 및 입지 경쟁력 분석</h3>
+          <div class="grid md:grid-cols-2 gap-6 mt-6 pt-6 border-t border-slate-100 text-sm">
+            <div class="space-y-4">
+              <div>
+                <h4 class="font-bold text-slate-900 mb-1">Objective</h4>
+                <p class="text-slate-600">위례신도시 핵심 상권의 공실 원인을 정량·정성적으로 진단하고, 교통 호재 및 배후 수요 기반의 상권 활성화 방안 도출</p>
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-900 mb-1">Approach</h4>
+                <ul class="list-disc list-inside text-slate-600 space-y-1">
+                  <li>블록별 상가 공실률, 업종 분포, 유동인구 동선 직접 현장 조사(임장)</li>
+                  <li>배후 세대수·소득 수준 및 위례선 트램 등 교통 인프라 계획과 상권 연결성 분석</li>
+                </ul>
+              </div>
+            </div>
+            <div class="space-y-4">
+              <div>
+                <h4 class="font-bold text-emerald-800 mb-1">Result</h4>
+                <ul class="list-disc list-inside text-slate-600 space-y-1">
+                  <li>단국대 부동산 학회 유리드(URID) 학술 발표 대회 <strong>우수상 수상</strong></li>
+                  <li>소상공인 업종 재편 및 앵커 테넌트 유치를 통한 상권 자생력 강화 전략 제안</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-900 mb-1">Role</h4>
+                <ul class="list-disc list-inside text-slate-600 space-y-1">
+                  <li>현장 임장 총괄 및 상권 데이터 시각화·핵심 논리 구성</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Hidden Extra Project -->
+        <div id="extra-projects" class="hidden space-y-8">
+          <article class="bg-white rounded-3xl border border-slate-200 p-8 md:p-10 shadow-sm card-hover">
+            <div class="flex flex-wrap items-center gap-2 mb-3">
+              <span class="px-3 py-1 rounded-full bg-blue-50 text-blue-700 border border-blue-200 text-xs font-bold">기업분석 · NPL 가치평가</span>
+              <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-600 text-xs font-semibold">재무제표 · 크레딧 리서치</span>
+            </div>
+            <h3 class="text-2xl font-bold text-slate-900">하나에프엔아이(NPL 투자사) 기업 및 수익구조 분석 리포트</h3>
+            <div class="grid md:grid-cols-2 gap-6 mt-6 pt-6 border-t border-slate-100 text-sm">
+              <div class="space-y-4">
+                <div>
+                  <h4 class="font-bold text-slate-900 mb-1">Objective</h4>
+                  <p class="text-slate-600">고금리 기조 속 부실채권(NPL) 시장 확대에 따른 하나에프엔아이의 재무 건전성, 조달 구조 및 담보 회수 역량 분석</p>
+                </div>
+                <div>
+                  <h4 class="font-bold text-slate-900 mb-1">Approach</h4>
+                  <ul class="list-disc list-inside text-slate-600 space-y-1">
+                    <li>사업보고서 기반 영업수익 추이, 차입금 만기 구조 및 유동성 지표 분석</li>
+                    <li>경·공매 및 채권 매각을 통한 회수율(Recovery Rate)과 담보가치 평가 메커니즘 정리</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="space-y-4">
+                <div>
+                  <h4 class="font-bold text-blue-800 mb-1">Result</h4>
+                  <ul class="list-disc list-inside text-slate-600 space-y-1">
+                    <li>금융지주 계열사로서의 조달 경쟁력과 부동산 담보 분석 역량의 시너지 규명</li>
+                    <li>3페이지 분량의 압축형 기업분석 리포트로 완성하여 금융권 리서치·여신 역량 입증</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="font-bold text-slate-900 mb-1">Role</h4>
+                  <ul class="list-disc list-inside text-slate-600 space-y-1">
+                    <li>재무 데이터 추출, 업황 분석 및 단독 리포트 집필</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="text-center pt-2">
+          <button id="toggle-projects-btn" onclick="toggleProjects()" class="px-6 py-3 rounded-xl bg-white border border-slate-300 text-slate-800 text-sm font-semibold hover:bg-slate-50 transition shadow-sm">
+            더 많은 프로젝트 보기 (+1)
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 md:py-28 max-w-6xl mx-auto px-6">
+    <div class="bg-white rounded-3xl border border-slate-200 p-8 md:p-12 shadow-sm grid lg:grid-cols-12 gap-10 items-center">
+      <div class="lg:col-span-7 space-y-6">
+        <div>
+          <span class="text-xs font-bold tracking-widest uppercase text-emerald-700">CONTACT</span>
+          <h2 class="text-3xl font-extrabold text-slate-900 mt-2">Contact & Collaboration</h2>
+          <p class="text-slate-600 mt-2">현장실습, 인턴십, 금융·부동산 프로젝트 협업 제안은 언제든 환영합니다.</p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-4 text-sm">
+          <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200/80">
+            <div class="text-xs text-slate-500">Email</div>
+            <a href="mailto:kimhwisu7425@gmail.com" class="font-bold text-slate-900 hover:text-emerald-700 mt-1 block">kimhwisu7425@gmail.com</a>
+          </div>
+          <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200/80">
+            <div class="text-xs text-slate-500">Location</div>
+            <div class="font-bold text-slate-900 mt-1">경기도 용인시 수지구</div>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap gap-3">
+          <a href="mailto:kimhwisu7425@gmail.com" class="px-5 py-2.5 rounded-xl bg-emerald-700 text-white text-sm font-semibold hover:bg-emerald-800 transition">
+            이메일 보내기
+          </a>
+          <button onclick="copyEmail()" class="px-5 py-2.5 rounded-xl bg-slate-100 text-slate-800 text-sm font-semibold hover:bg-slate-200 transition">
+            이메일 주소 복사
+          </button>
+        </div>
+        <p id="copy-msg" class="text-xs font-semibold text-emerald-700 hidden">이메일 주소(kimhwisu7425@gmail.com)가 복사되었습니다!</p>
+      </div>
+
+      <!-- QR Code Card -->
+      <div class="lg:col-span-5 flex flex-col items-center justify-center p-6 rounded-2xl bg-slate-50 border border-slate-200/80 text-center space-y-3">
+        <img
+          src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=BEGIN%3AVCARD%0AVERSION%3A3.0%0AFN%3A%EA%B9%80%ED%9C%98%EC%88%98%0AN%3A%EA%B9%80%3B%ED%9C%98%EC%88%98%3B%3B%3B%0ATITLE%3A%EB%8B%A8%EA%B5%AD%EB%8C%80%ED%95%99%EA%B5%90%20%EB%B6%80%EB%8F%99%EC%82%B0%ED%95%99%EC%A0%84%EA%B3%B5%0AEMAIL%3Akimhwisu7425%40gmail.com%0AEND%3AVCARD"
+          alt="연락처 저장 QR 코드"
+          class="w-40 h-40 rounded-xl border border-slate-200 bg-white p-2"
+        />
+        <div>
+          <div class="text-sm font-bold text-slate-900">Scan to Save</div>
+          <p class="text-xs text-slate-500 mt-0.5">스마트폰 카메라로 스캔하면 연락처가 바로 저장됩니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-slate-400 py-12 text-sm">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div>
+        <span class="text-white font-bold">Kim Hwisu</span> · © 2026 Kim Hwisu. All rights reserved.
+      </div>
+      <div class="flex gap-6">
+        <a href="#hero" class="hover:text-white transition">Home</a>
+        <a href="#about" class="hover:text-white transition">About</a>
+        <a href="#projects" class="hover:text-white transition">Projects</a>
+        <a href="#contact" class="hover:text-white transition">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleProjects() {
+      const extra = document.getElementById('extra-projects');
+      const btn = document.getElementById('toggle-projects-btn');
+      if (extra.classList.contains('hidden')) {
+        extra.classList.remove('hidden');
+        btn.textContent = '접기';
+      } else {
+        extra.classList.add('hidden');
+        btn.textContent = '더 많은 프로젝트 보기 (+1)';
+      }
+    }
+
+    function copyEmail() {
+      navigator.clipboard.writeText('kimhwisu7425@gmail.com');
+      const msg = document.getElementById('copy-msg');
+      msg.classList.remove('hidden');
+      setTimeout(() => msg.classList.add('hidden'), 2500);
+    }
+  </script>
+</body>
+</html>
